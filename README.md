@@ -109,6 +109,7 @@ Response Parameter
 |continent.code|string|Two-character continent code.|
 |continent.hemisphere|array|The hemisphere of where the country located. The data in array format with first item indicates (north/south) hemisphere and second item indicates (east/west) hemisphere information.|
 |continent.translation|object|Translation data based on the given lang code.|
+|district|string|District or county name.|
 |country.name|string|Country name based on ISO 3166.|
 |country.alpha3_code|string|Three-character country code based on ISO 3166.|
 |country.numeric_code|string|Three-character country numeric code based on ISO 3166.|
@@ -176,6 +177,7 @@ Response Parameter
             "value":"북아메리카"
         }
     },
+    "district": "Santa Clara County",
     "country":{
         "name":"United States of America",
         "alpha3_code":"USA",
