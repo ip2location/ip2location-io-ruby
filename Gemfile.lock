@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    ip2location_io_ruby (1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  ip2location_io_ruby!
+
+BUNDLED WITH
+   1.16.1
