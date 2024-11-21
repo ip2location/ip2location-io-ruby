@@ -36,4 +36,5 @@ Gem::Specification.new do |s|
     "spec/ip2location_io_ruby_domainwhois_spec.rb",
     "spec/ip2location_io_ruby_ipgeolocation_spec.rb"
   ]
+  s.add_runtime_dependency "simpleidn", "~> 0.2"
 end
