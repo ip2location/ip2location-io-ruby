@@ -36,5 +36,13 @@ Gem::Specification.new do |s|
     "spec/ip2location_io_ruby_domainwhois_spec.rb",
     "spec/ip2location_io_ruby_ipgeolocation_spec.rb"
   ]
+  if s.respond_to?(:metadata=)
+    s.metadata = {
+      "bug_tracker_uri" => "https://github.com/ip2location/ip2location-io-ruby/issues",
+      "documentation_uri" => "https://www.rubydoc.info/gems/ip2location_io_ruby",
+      "homepage_uri" => "https://www.ip2location.io",
+      "source_code_uri" => "https://github.com/ip2location/ip2location-io-ruby",
+    }
+  end
   s.add_runtime_dependency "simpleidn", "~> 0.2"
 end

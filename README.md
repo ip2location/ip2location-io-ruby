@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://img.shields.io/gem/v/ip2location_io_ruby.svg)](https://rubygems.org/gems/ip2location_io_ruby)
+[![Total Downloads](https://img.shields.io/gem/dt/ip2location_io_ruby.svg)](https://rubygems.org/gems/ip2location_io_ruby)
+
 IP2Location.io Ruby SDK
 ========================
 This Ruby module enables user to query for an enriched data set, such as country, region, district, city, latitude & longitude, ZIP code, time zone, ASN, ISP, domain, net speed, IDD code, area code, weather station data, MNC, MCC, mobile brand, elevation, usage type, address type, advertisement category and proxy data with an IP address. It supports both IPv4 and IPv6 address lookup.
