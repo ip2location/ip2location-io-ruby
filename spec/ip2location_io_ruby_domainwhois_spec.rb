@@ -6,17 +6,17 @@ describe "IP2LocationIORuby" do
     begin
       IP2LocationIORuby::Api::DomainWhois.lookup('example.c')
     rescue Exception => e
-      expect(e.message).to eq 'Missing parameter.'
+      expect(e.message).to eq 'API key not found.'
     end
   end
 
   it "work correctly with Api Key exist" do
     if $test_api_key == 'YOUR_API_KEY'
       print "/*
-* You could enter a FraudLabs Pro API Key in spec/spec_helper.rb
+* You could enter a IP2Location.io API Key in spec/spec_helper.rb
 * for real web service calling test.
 * 
-* You could sign up for a free API key at https://www.fraudlabspro.com/pricing
+* You could sign up for a free API key at https://www.ip2location.io/pricing
 * if you do not have one.
 */"
       expect($test_api_key).to eq 'YOUR_API_KEY'

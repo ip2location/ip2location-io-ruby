@@ -97,3 +97,16 @@ IP2LocationIORuby::Configuration.api_key = 'YOUR_API_KEY'
 # Get domain extension (gTLD or ccTLD) from URL or domain name
 IP2LocationIORuby::Api::DomainWhois.get_domain_extension('example.com');
 ```
+
+### Get Hosted Domain List
+
+You can get the domains listed within the IP using following codes:
+
+```ruby
+require 'ip2location_io_ruby'
+
+# Configures IP2Location.io API key
+IP2LocationIORuby::Configuration.api_key = 'YOUR_API_KEY'
+
+# Get domain extension (gTLD or ccTLD) from URL or domain name
+IP2LocationIORuby::Api::HostedDomain.lookup('8.8.8.8');

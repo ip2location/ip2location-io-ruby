@@ -29,11 +29,13 @@ Gem::Specification.new do |s|
     "lib/ip2location_io_ruby.rb",
     "lib/ip2location_io_ruby/api.rb",
     "lib/ip2location_io_ruby/api/domainwhois.rb",
+    "lib/ip2location_io_ruby/api/hosteddomain.rb",
     "lib/ip2location_io_ruby/api/ipgeolocation.rb",
     "lib/ip2location_io_ruby/configuration.rb",
     "lib/ip2location_io_ruby/version.rb",
     "spec/spec_helper.rb",
     "spec/ip2location_io_ruby_domainwhois_spec.rb",
+    "spec/ip2location_io_ruby_hosteddomain_spec.rb",
     "spec/ip2location_io_ruby_ipgeolocation_spec.rb"
   ]
   if s.respond_to?(:metadata=)

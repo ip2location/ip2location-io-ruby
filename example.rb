@@ -21,3 +21,11 @@ puts IP2LocationIORuby::Api::DomainWhois.get_punycode('täst.de')
 puts IP2LocationIORuby::Api::DomainWhois.get_normal_text('xn--tst-qla.de')
 puts IP2LocationIORuby::Api::DomainWhois.get_domain_name('https://www.example.com/exe')
 puts IP2LocationIORuby::Api::DomainWhois.get_domain_extension('example.com')
+
+begin
+    result = IP2LocationIORuby::Api::HostedDomain.lookup('8.8.8.8')
+rescue Exception => e
+    puts e.message
+else
+    puts result.body
+end

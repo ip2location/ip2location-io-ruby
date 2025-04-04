@@ -4,9 +4,9 @@ describe "IP2LocationIORuby" do
   it "work correctly with invalid Api Key" do
     IP2LocationIORuby::Configuration.api_key = ''
     begin
-      IP2LocationIORuby::Api::IPGeolocation.lookup('8.8.8.8')
+      IP2LocationIORuby::Api::HostedDomain.lookup('1.1.1')
     rescue Exception => e
-      expect(e.message).to eq 'Invalid API key or insufficient credit.'
+      expect(e.message).to eq 'Missing parameter.'
     end
   end
 
@@ -25,17 +25,20 @@ describe "IP2LocationIORuby" do
     end
   end
 
-  it "work correctly with lookup IP" do
+  it "work correctly with lookup hosted domains" do
     IP2LocationIORuby::Configuration.api_key = $test_api_key
     if $test_api_key == 'YOUR_API_KEY'
       begin
-        IP2LocationIORuby::Api::IPGeolocation.lookup('8.8.8.8')
+        IP2LocationIORuby::Api::HostedDomain.lookup('1.1.1')
       rescue Exception => e
-        expect(e.message).to eq 'Invalid API key or insufficient credit.'
+        expect(e.message).to eq 'API key not found.'
       end
     else
-      result = IP2LocationIORuby::Api::IPGeolocation.lookup('8.8.8.8')
-      expect(JSON[result.body]['country_code']).to eq 'US'
+      begin
+        result = IP2LocationIORuby::Api::HostedDomain.lookup('1.1.1')
+      rescue Exception => e
+        expect(e.message).to eq 'Invalid IP address.'
+      end
     end
   end
 
